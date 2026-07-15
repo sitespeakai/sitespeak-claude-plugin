@@ -48,6 +48,48 @@ confirms before any write and makes the smallest change that does the job.
 | Skill | `sitespeak-chatbot-manager` - the plain-English management loop and goal playbooks |
 | MCP server | `sitespeak` - HTTP transport to `https://api.sitespeak.ai/mcp`, authenticated with your token |
 
+## Connect
+
+The plugin is the easiest way to connect. Any MCP client that supports Streamable
+HTTP with a bearer token can also connect to the management MCP directly:
+
+```json
+{
+  "mcpServers": {
+    "sitespeak": {
+      "type": "http",
+      "url": "https://api.sitespeak.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_API_TOKEN"
+      }
+    }
+  }
+}
+```
+
+Unauthenticated clients can list the available tools; every tool call requires a
+valid token. Create one at
+[sitespeak.ai/user/api-tokens](https://sitespeak.ai/user/api-tokens).
+
+## Tools
+
+- `list_chatbots` - list the chatbots your account can manage
+- `get_chatbot` - read a chatbot's settings, allowed models, and per-model credit cost
+- `update_chatbot_settings` - update model, prompts, temperature, topK, history, lead capture, and escalations
+- `list_inbox_threads` - list conversation threads in the inbox
+- `get_thread_messages` - read the messages in a conversation
+- `update_thread_status` - triage or archive a thread
+- `list_sources` - list knowledge sources and their training status
+- `add_source` - add a new knowledge source (page or site)
+- `recrawl_source` - re-index an existing source to pick up its latest content
+- `get_chatbot_analytics` - conversations, answered %, sentiment, leads, top sources and pages
+- `get_chatbot_insights` - AI-clustered answered and unanswered question themes
+- `list_leads` - read captured leads
+- `list_suggested_messages` - list the starter prompts shown to visitors
+- `add_suggested_message` - add a suggested starter prompt
+- `update_suggested_message` - edit a suggested starter prompt
+- `remove_suggested_message` - remove a suggested starter prompt
+
 ## Requirements
 
 - Claude Code
