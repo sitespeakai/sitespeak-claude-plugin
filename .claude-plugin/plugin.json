@@ -1,0 +1,31 @@
+{
+  "name": "sitespeak-chatbot-manager",
+  "displayName": "SiteSpeak Chatbot Manager",
+  "version": "1.0.0",
+  "description": "Inspect, optimize, configure, and triage your SiteSpeak chatbots in plain English. Analytics-driven, and it confirms before every change.",
+  "author": {
+    "name": "SiteSpeakAI",
+    "url": "https://sitespeak.ai"
+  },
+  "homepage": "https://sitespeak.ai/docs",
+  "repository": "https://github.com/sitespeakai/sitespeak-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "sitespeak",
+    "chatbot",
+    "ai",
+    "customer-support",
+    "analytics",
+    "lead-capture",
+    "mcp"
+  ],
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "SiteSpeak API Token",
+      "description": "Create one at https://sitespeak.ai/user/api-tokens",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

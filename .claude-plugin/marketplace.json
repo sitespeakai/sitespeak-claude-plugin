@@ -1,0 +1,15 @@
+{
+  "name": "sitespeak-plugins",
+  "description": "Official SiteSpeak plugins for Claude Code - manage and optimize your AI chatbots.",
+  "owner": {
+    "name": "SiteSpeakAI",
+    "url": "https://sitespeak.ai"
+  },
+  "plugins": [
+    {
+      "name": "sitespeak-chatbot-manager",
+      "source": "./",
+      "description": "Inspect, optimize, configure, and triage your SiteSpeak chatbots in plain English."
+    }
+  ]
+}
