@@ -10,6 +10,7 @@
   "homepage": "https://sitespeak.ai/docs",
   "repository": "https://github.com/sitespeakai/sitespeak-claude-plugin",
   "license": "MIT",
+  "privacyPolicyUrl": "https://sitespeak.ai/privacy-policy",
   "keywords": [
     "sitespeak",
     "chatbot",
