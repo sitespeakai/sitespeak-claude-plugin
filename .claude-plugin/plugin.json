@@ -7,10 +7,13 @@
     "name": "SiteSpeakAI",
     "url": "https://sitespeak.ai"
   },
-  "homepage": "https://sitespeak.ai/docs",
+  "homepage": "https://sitespeak.ai",
+  "documentationUrl": "https://sitespeak.ai/docs/managing-your-chatbot/ai-agents",
   "repository": "https://github.com/sitespeakai/sitespeak-claude-plugin",
   "license": "MIT",
   "privacyPolicyUrl": "https://sitespeak.ai/privacy-policy",
+  "supportUrl": "https://sitespeak.ai/contact",
+  "termsOfServiceUrl": "https://sitespeak.ai/terms-of-service",
   "keywords": [
     "sitespeak",
     "chatbot",
