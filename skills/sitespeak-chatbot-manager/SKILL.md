@@ -28,9 +28,9 @@ confirmation first.
 /plugin install sitespeak-chatbot-manager@sitespeak-plugins
 ```
 
-Claude Code asks for your SiteSpeak API token on install and stores it securely
-(macOS Keychain). The bundled MCP server connects automatically. Create a token at
-https://sitespeak.ai/user/api-tokens.
+Then sign in to SiteSpeak once: run `/mcp`, select the `sitespeak` server, and finish
+the sign-in in your browser. In Claude chat or Cowork, connect SiteSpeak from the
+plugin's Connectors tab instead.
 
 ## How it works
 

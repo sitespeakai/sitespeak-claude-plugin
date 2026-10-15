@@ -2,10 +2,7 @@
   "mcpServers": {
     "sitespeak": {
       "type": "http",
-      "url": "https://api.sitespeak.ai/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.api_token}"
-      }
+      "url": "https://api.sitespeak.ai/mcp"
     }
   }
 }
