@@ -47,9 +47,9 @@ sentiment %, leads, top sources/pages/countries), `get_chatbot_insights`
 `get_thread_messages`, `list_sources`, `list_suggested_messages`, `list_leads`.
 
 **Write:** `update_chatbot_settings` (model, instructions prompt, welcome message,
-default answer, temperature, topK, history, lead capture, escalations),
-`update_thread_status`, `add_source`, `recrawl_source`, `add_suggested_message`,
-`update_suggested_message`, `remove_suggested_message`.
+default answer, temperature, lead capture, escalations), `update_thread_status`,
+`reply_to_thread` (only text the user approved), `add_source`, `recrawl_source`,
+`add_suggested_message`, `update_suggested_message`, `remove_suggested_message`.
 
 ## The loop (every time)
 
@@ -73,7 +73,7 @@ Each goal: what it improves, what to measure, and the levers to pull.
 - **Better answers** (fewer "I don't know") - Measure: `answeredQuestionsPercentage`
   and the **unanswered** themes from `get_chatbot_insights` (your real knowledge
   gaps). Levers: `add_source` and `recrawl_source` to fill the gaps,
-  `instructions_prompt`, `default_answer`, `topK`.
+  `instructions_prompt`, `default_answer`.
 - **Smoother onboarding** - Measure: `messagesPerConversation` and where new visitors
   drop off. Levers: `welcome_message`, suggested starter questions,
   `instructions_prompt`.
@@ -91,8 +91,7 @@ Each goal: what it improves, what to measure, and the levers to pull.
   suggested messages of type `redirect` that point to your signup or pricing page,
   `instructions_prompt` nudges, the `welcome_message`.
 - **Lower cost** - Measure: conversation volume and the credit cost per model from
-  `get_chatbot`. Levers: a lower-credit `gpt_model` (only from `allowed_models`),
-  lower `topK` or `history`.
+  `get_chatbot`. Levers: a lower-credit `gpt_model` (only from `allowed_models`).
 - **Fresh knowledge** - Measure: `trained_at`, `sync_frequency`, and `status` in
   `list_sources`. Levers: `recrawl_source` for stale pages, `add_source` for new ones.
 

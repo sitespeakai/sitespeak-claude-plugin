@@ -75,10 +75,11 @@ valid token. Create one at
 
 - `list_chatbots` - list the chatbots your account can manage
 - `get_chatbot` - read a chatbot's settings, allowed models, and per-model credit cost
-- `update_chatbot_settings` - update model, prompts, temperature, topK, history, lead capture, and escalations
+- `update_chatbot_settings` - update model, prompts, temperature, lead capture, and escalations
 - `list_inbox_threads` - list conversation threads in the inbox
 - `get_thread_messages` - read the messages in a conversation
 - `update_thread_status` - triage or archive a thread
+- `reply_to_thread` - send an approved reply to the visitor in an inbox thread
 - `list_sources` - list knowledge sources and their training status
 - `add_source` - add a new knowledge source (page or site)
 - `recrawl_source` - re-index an existing source to pick up its latest content

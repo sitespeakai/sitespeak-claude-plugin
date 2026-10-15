@@ -1,7 +1,7 @@
 {
   "name": "sitespeak-chatbot-manager",
   "displayName": "SiteSpeak Chatbot Manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inspect, optimize, configure, and triage your SiteSpeak chatbots in plain English. Analytics-driven, and it confirms before every change.",
   "author": {
     "name": "SiteSpeakAI",
